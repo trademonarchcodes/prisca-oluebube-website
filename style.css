@@ -292,3 +292,25 @@ body{font-size:16px!important}
   .learning-card p,.learning-footnote,.guide-list li,.guide-callout span,
   .faq-list details p,.contact-inner>p,.contact-prompt{font-size:15px!important}
 }
+
+
+/* Clear all-services promotional pricing */
+.service-offer{
+  margin:22px 0 18px;padding:22px 24px;border:1px solid #45618d;
+  border-radius:16px;background:linear-gradient(135deg,#111d31,#172947);
+  box-shadow:0 14px 34px #0003;max-width:520px;
+}
+.service-offer-label{display:block;color:#9dbbff;font:700 11px 'DM Mono',monospace;letter-spacing:.13em;margin-bottom:13px}
+.service-offer-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.service-offer-row>strong:first-child{font:700 18px 'Sora',sans-serif;color:#f5f8ff;margin-right:auto}
+.service-old-price{font-size:17px;color:#9aa8bd;text-decoration:line-through;text-decoration-thickness:2px}
+.service-new-price{font:800 30px 'Sora',sans-serif;color:#c8e27a;letter-spacing:-.04em}
+.service-offer p{margin:10px 0 0;color:#b8c7df;font-size:14px;line-height:1.65}
+@media(max-width:600px){
+  .service-offer{padding:19px 17px;margin:20px 0 16px}
+  .service-offer-row{gap:11px}
+  .service-offer-row>strong:first-child{width:100%;font-size:17px}
+  .service-old-price{font-size:16px}
+  .service-new-price{font-size:29px}
+  .service-offer p{font-size:14px}
+}
