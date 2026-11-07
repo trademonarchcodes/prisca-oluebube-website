@@ -314,3 +314,13 @@ body{font-size:16px!important}
   .service-new-price{font-size:29px}
   .service-offer p{font-size:14px}
 }
+
+
+/* Testimonials: authentic screenshot gallery */
+.testimonials-section{padding-top:80px;padding-bottom:85px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:34px;align-items:start}
+.testimonial-card{margin:0;padding:12px;background:#101d30;border:1px solid #304463;border-radius:18px;overflow:hidden;box-shadow:0 14px 35px #0003;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.testimonial-card img{display:block;width:100%;height:auto;max-height:680px;object-fit:contain;border-radius:10px;background:#0b1423}
+@media(hover:hover) and (pointer:fine){.testimonial-card:hover{transform:translateY(-6px);border-color:#9dbbff;box-shadow:0 22px 42px #0005}}
+@media(max-width:650px){.testimonials-section{padding-top:65px;padding-bottom:68px}.testimonials-grid{grid-template-columns:1fr;gap:17px;margin-top:25px}.testimonial-card{padding:9px;border-radius:15px}.testimonial-card img{max-height:none}}
+@media(prefers-reduced-motion:reduce){.testimonial-card{transition:none}}
