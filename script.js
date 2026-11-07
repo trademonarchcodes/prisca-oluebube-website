@@ -24,20 +24,4 @@ if(menuButton&&nav){
 const year=document.querySelector('#year');
 if(year) year.textContent=new Date().getFullYear();
 
-const revealItems=document.querySelectorAll('.hero-copy,.portrait-stage,.learning-card,.about-grid,.guide-art,.guide-copy,.faq-list details,.contact-inner');
-if('IntersectionObserver' in window){
-  const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },{threshold:.12});
-  revealItems.forEach(item=>{
-    item.classList.add('reveal');
-    observer.observe(item);
-  });
-}else{
-  revealItems.forEach(item=>item.classList.add('is-visible'));
-}
+// Keep the page calm and fully visible; no scroll-triggered reveal animation.
