@@ -262,3 +262,33 @@ body{background:#080b14;color:#f4f7ff;font-family:var(--body)}
     transition:none !important;
   }
 }
+
+
+/* Readability pass: larger, clearer type on desktop and mobile */
+body{font-size:16px!important}
+.hero-intro,.about-copy p,.guide-copy>p:not(.eyebrow):not(.price-note),.section-heading>p,
+.learning-card p,.learning-footnote,.guide-list li,.guide-callout span,
+.faq-list details p,.contact-inner>p,.contact-prompt{
+  font-size:16px!important;
+  line-height:1.8!important;
+}
+.section-kicker,.eyebrow{font-size:12px!important;letter-spacing:.12em!important}
+.nav-links{font-size:14px!important}
+.learning-card h3{font-size:clamp(27px,2.4vw,34px)!important;line-height:1.12!important}
+.faq-list summary{font-size:17px!important;line-height:1.5!important}
+.button,.nav-cta{font-size:15px!important;min-height:54px!important}
+.price-note{font-size:14px!important;line-height:1.7!important}
+@media(max-width:800px){
+  .hero-intro,.about-copy p,.guide-copy>p:not(.eyebrow):not(.price-note),.section-heading>p,
+  .learning-card p,.learning-footnote,.guide-list li,.guide-callout span,
+  .faq-list details p,.contact-inner>p,.contact-prompt{font-size:16px!important;line-height:1.75!important}
+  .section-kicker,.eyebrow{font-size:11px!important}
+  .learning-card h3{font-size:clamp(27px,7.5vw,34px)!important}
+  .faq-list summary{font-size:16px!important}
+  .button,.nav-cta{font-size:15px!important;min-height:56px!important}
+}
+@media(max-width:380px){
+  .hero-intro,.about-copy p,.guide-copy>p:not(.eyebrow):not(.price-note),.section-heading>p,
+  .learning-card p,.learning-footnote,.guide-list li,.guide-callout span,
+  .faq-list details p,.contact-inner>p,.contact-prompt{font-size:15px!important}
+}
