@@ -209,3 +209,56 @@ body{background:#080b14;color:#f4f7ff;font-family:var(--body)}
   .marquee span{padding:0 18px !important}
   .marquee div{animation-duration:16s !important}
 }
+
+
+/* Subtle, lively interactions across the site */
+@media (hover:hover) and (pointer:fine){
+  .learning-card{
+    transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease !important;
+  }
+  .learning-card:hover{
+    transform:translateY(-9px) scale(1.012) !important;
+    box-shadow:0 22px 42px rgba(0,0,0,.32) !important;
+    border-color:#c8e27a !important;
+  }
+  .button,.nav-cta{
+    transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease,color .22s ease !important;
+  }
+  .button:hover,.nav-cta:hover{
+    transform:translateY(-4px) !important;
+    box-shadow:0 13px 28px rgba(0,0,0,.3) !important;
+  }
+  .portrait-frame img,.contact-photo img{
+    transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .4s ease !important;
+  }
+  .portrait-frame:hover img,.contact-photo:hover img{
+    transform:scale(1.045) !important;
+    filter:saturate(1.08) !important;
+  }
+  .guide-cover{
+    transition:transform .35s ease,box-shadow .35s ease !important;
+  }
+  .guide-art:hover .guide-cover{
+    transform:rotate(0deg) translateY(-9px) scale(1.025) !important;
+    box-shadow:24px 25px 0 #397bff !important;
+  }
+  .nav-links>a:not(.nav-cta),.footer-links a,.text-link{
+    transition:color .2s ease,border-color .2s ease !important;
+  }
+  .nav-links>a:not(.nav-cta):hover,.footer-links a:hover,.text-link:hover{
+    color:#c8e27a !important;
+  }
+  .faq-list summary span{
+    transition:transform .22s ease,color .22s ease !important;
+  }
+  .faq-list details[open] summary span{transform:rotate(45deg) scale(1.15) !important}
+}
+.button:active,.nav-cta:active,.learning-card:active{
+  transform:scale(.985) !important;
+}
+@media(prefers-reduced-motion:reduce){
+  .learning-card,.button,.nav-cta,.portrait-frame img,.contact-photo img,.guide-cover,
+  .nav-links>a,.footer-links a,.text-link,.faq-list summary span{
+    transition:none !important;
+  }
+}
