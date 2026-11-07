@@ -147,3 +147,19 @@ body{background:#080b14;color:#f4f7ff;font-family:var(--body)}
   .button{padding:15px 17px}
 }
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* Final polish: confident typography and calm, intentional interactions */
+:root{--display:'Sora',sans-serif!important;--body:'DM Sans',sans-serif!important}
+.hero h1,.section-heading h2,.about h2,.guide-copy h2,.faq-grid h2,.contact-inner h2,
+.learning-card h3,.guide-cover strong,.faq-list summary,.wordmark{font-family:'Sora',sans-serif!important}
+.hero h1,.section-heading h2,.about h2,.guide-copy h2,.faq-grid h2,.contact-inner h2{letter-spacing:-.065em!important}
+@keyframes rotate{to{transform:none!important}}
+.marquee div{animation:none!important;transform:none!important}
+.portrait-orbit.orbit-two{animation:none!important}
+.reveal,.reveal.is-visible{opacity:1!important;transform:none!important;transition:none!important}
+.learning-card,.guide-cover,.button,.nav-cta,.faq-list summary span{transition:background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease!important}
+.learning-card:hover,.button:hover,.nav-cta:hover,.guide-art:hover .guide-cover{transform:none!important}
+.learning-card:hover{box-shadow:0 12px 28px #0003!important}
+.contact-photo{width:190px!important;height:190px!important;border-radius:50%!important;overflow:hidden!important;border:7px solid #c8e27a!important;box-shadow:0 18px 45px #0005!important;display:block!important}
+.contact-photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 28%!important;display:block!important}
+@media(max-width:800px){.contact-photo{width:150px!important;height:150px!important}}
