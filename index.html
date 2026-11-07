@@ -9,51 +9,66 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261107-dark">
+  <link rel="stylesheet" href="style.css?v=20261107-prisca-green">
 
   <style>
-    /* Critical theme override: keep the requested dark palette even if the external CSS is cached. */
-    :root{color-scheme:dark!important;--forest:#080b14!important;--ink:#f4f7ff!important;--cream:#111827!important;--paper:#080b14!important;--lime:#f4f7ff!important;--line:#263247!important;--display:'Syne',sans-serif!important;--body:'Space Grotesk',sans-serif!important}
-    html,body{background:#080b14!important;color:#f4f7ff!important;font-family:'Space Grotesk',sans-serif!important}
-    .announcement{background:#111a2b!important;color:#b9d0ff!important;border-bottom:1px solid #263a60!important}
-    .pulse{background:#4b8bff!important;box-shadow:0 0 0 4px #397bff25!important}
-    .site-header{background:#080b14!important;border-color:#1d2a40!important}
-    .wordmark{color:#fff!important;font-family:'Syne',sans-serif!important}.wordmark span{color:#6d9cff!important}
-    .nav-links{color:#dbe5f7!important}.nav-links>a:hover{color:#8fb4ff!important}
-    .nav-cta,.button-dark,.button-green,.button-lime{background:#f4f7ff!important;color:#080b14!important}
-    .eyebrow,.section-kicker{color:#8db3ff!important;font-family:'DM Mono',monospace!important}
-    .hero h1,.section-heading h2,.about h2,.guide-copy h2,.faq-grid h2,.contact-inner h2{color:#f7f9ff!important;font-family:'Syne',sans-serif!important}
-    .hero h1 em,.section-heading h2 em,.about h2 em,.guide-copy h2 em,.faq-grid h2 em,.contact-inner h2 em{color:#80aaff!important}
-    .hero h1 span{color:#65738d!important}
-    .hero-intro,.about-copy p,.guide-copy>p:not(.eyebrow):not(.price-note),.faq-list details p{color:#aab6cb!important}
-    .button{border-radius:12px!important;font-family:'Space Grotesk',sans-serif!important}
-    .button-outline{background:#111a2b!important;color:#f3f6ff!important;border-color:#52617a!important}
-    .portrait-frame{background:#0c1424!important;border-color:#101a2b!important;outline-color:#397bff!important}
-    .portrait-orbit{border-color:#35578f!important}.orbit-two{border-color:#397bff!important}
-    .portrait-tag{background:#f4f7ff!important;color:#080b14!important;border-radius:10px!important}
-    .marquee{background:#101a2b!important;color:#f4f7ff!important;border-color:#263957!important}.marquee span{color:#80aaff!important}
-    .about,.guide-section,.faq-section{background:#080b14!important}
-    .learn-section{background:#0d1422!important;border-color:#1e2b43!important}
-    .learning-card{border:1px solid #293852!important;border-radius:18px!important}
-    .card-tall{background:linear-gradient(145deg,#172b4b,#101a2d)!important;color:#f7f9ff!important}
-    .card-cream,.card-wide{background:#131d2e!important;color:#f3f6ff!important}
-    .card-lime{background:#eaf1ff!important;color:#0a1220!important;border-color:#eaf1ff!important}
-    .guide-art{background:radial-gradient(circle at 50% 45%,#1b3154,#0e1728 68%)!important;border:1px solid #2c4267!important}
-    .guide-cover{background:#f1f5ff!important;color:#0b1424!important;box-shadow:18px 18px 0 #397bff!important}
-    .guide-cover>span,.guide-cover small{color:#52627e!important}
-    .guide-cover strong span{color:#397bff!important}
-    .guide-list li,.faq-list summary{color:#e4ebf8!important;border-color:#263247!important}
-    .guide-callout{background:#111d31!important;border-left-color:#5c91ff!important}
-    .guide-callout strong{color:#f5f8ff!important}.guide-callout span,.price-note{color:#aab8d0!important}
-    .contact-section{background:radial-gradient(circle at 85% 20%,#19335c 0,#101b30 38%,#0b111e 78%)!important;border-color:#2a4269!important}
-    .contact-inner>p,.contact-prompt{color:#c3d0e5!important}
-    .button-contact-outline{background:#ffffff08!important;color:#f5f8ff!important;border-color:#7085a7!important}
-    .site-footer{background:#080b14!important;border-color:#1e2b43!important}
-    .site-footer>p,.site-footer>small,.footer-credit{color:#8796b0!important}
+    /* Prisca's own visual identity: deep forest, sage and warm cream. */
+    :root{color-scheme:dark;--forest:#071f18;--forest2:#103b2d;--ink:#f4f1e7;--cream:#e9e5d8;--paper:#0a211a;--lime:#c8e27a;--sage:#9eb69d;--muted:#aab7a8;--line:#29483a;--display:'Manrope',sans-serif;--body:'DM Sans',sans-serif}
+    html,body{background:#0a211a!important;color:#f4f1e7!important;font-family:'DM Sans',sans-serif!important}
+    .announcement{background:#c8e27a!important;color:#102b20!important;border:0!important}
+    .pulse{background:#102b20!important;box-shadow:0 0 0 4px #102b2020!important}
+    .site-header{background:#0a211af2!important;border-color:#29483a!important}
+    .wordmark{color:#f8f5eb!important;font-family:'Manrope',sans-serif!important}.wordmark span{color:#c8e27a!important}
+    .nav-links{color:#e8eee3!important}.nav-links>a:hover{color:#c8e27a!important}
+    .nav-cta,.button-dark,.button-green,.button-lime{background:#eeeadd!important;color:#102b20!important;box-shadow:0 8px 25px #0003!important}
+    .nav-cta:hover,.button-dark:hover,.button-green:hover,.button-lime:hover{background:#c8e27a!important;color:#102b20!important}
+    .eyebrow,.section-kicker{color:#b5ce91!important;font-family:'DM Sans',sans-serif!important}
+    .hero h1,.section-heading h2,.about h2,.guide-copy h2,.faq-grid h2,.contact-inner h2{color:#f6f2e8!important;font-family:'Manrope',sans-serif!important;font-weight:800!important;letter-spacing:-.065em!important}
+    .hero h1 em,.section-heading h2 em,.about h2 em,.guide-copy h2 em,.faq-grid h2 em,.contact-inner h2 em{color:#b8d77c!important}
+    .hero h1 span{color:#91a596!important}
+    .hero-intro,.about-copy p,.guide-copy>p:not(.eyebrow):not(.price-note),.faq-list details p{color:#bdc9bb!important}
+    .button{border-radius:999px!important;font-family:'DM Sans',sans-serif!important}
+    .button-outline{background:#102e23!important;color:#f4f1e7!important;border-color:#64806b!important}
+    .button-outline:hover{background:#1a4432!important;border-color:#b8d77c!important}
+    .portrait-frame{background:#102a20!important;border-color:#173c2c!important;outline-color:#9dbb7d!important;box-shadow:0 30px 90px #0006!important}
+    .portrait-orbit{border-color:#55745c!important}.orbit-two{border-color:#9ab47d!important}
+    .portrait-tag{background:#c8e27a!important;color:#102b20!important;border-radius:999px!important}
+    .portrait-caption{color:#b5c5b1!important}.portrait-caption span{color:#c8e27a!important}
+    .marquee{background:#c8e27a!important;color:#102b20!important;border-color:#c8e27a!important}
+    .marquee span{color:#315a3e!important}
+    .about,.guide-section,.faq-section{background:#0a211a!important}
+    .learn-section{background:#102b21!important;border-color:#29483a!important}
+    .section-heading>p,.learning-footnote{color:#bdc9bb!important}
+    .learning-card{border:1px solid #355342!important;border-radius:20px!important}
+    .card-tall{background:linear-gradient(145deg,#1b4a35,#123426)!important;color:#f6f2e8!important}
+    .card-cream,.card-wide{background:#e9e5d8!important;color:#173126!important}
+    .card-lime{background:#c8e27a!important;color:#173126!important;border-color:#c8e27a!important}
+    .learning-card p{color:inherit!important;opacity:.82!important}
+    .card-number{color:#a9c78b!important}.card-cream .card-number,.card-lime .card-number{color:#58734d!important}
+    .card-icon{color:#c8e27a!important}.card-cream .card-icon,.card-lime .card-icon{color:#527348!important}
+    .learning-card:hover{border-color:#c8e27a!important;box-shadow:0 22px 50px #0005!important}
+    .guide-art{background:radial-gradient(circle at 50% 45%,#1b4934,#0d2b20 68%)!important;border:1px solid #3a6047!important}
+    .guide-circle{border-color:#648466!important}.circle-b{border-color:#a9c887!important}
+    .guide-cover{background:#eeeadd!important;color:#173126!important;box-shadow:18px 18px 0 #8eaa69!important}
+    .guide-cover>span,.guide-cover small{color:#63745f!important}
+    .guide-cover strong{font-family:'Manrope',sans-serif!important}.guide-cover strong span{color:#78984f!important}
+    .guide-list li,.faq-list summary{color:#e8eee3!important;border-color:#34513f!important}
+    .guide-list li span,.faq-list summary span{color:#c8e27a!important}
+    .guide-callout{background:#153729!important;border-left-color:#b8d77c!important}
+    .guide-callout strong{color:#f6f2e8!important}.guide-callout span,.price-note{color:#bdc9bb!important}
+    .contact-section{background:radial-gradient(circle at 85% 20%,#244b36 0,#123426 40%,#0b241b 80%)!important;border-color:#3a6047!important}
+    .contact-inner>p,.contact-prompt{color:#d0dbca!important}
+    .button-contact-outline{background:#ffffff0a!important;color:#f6f2e8!important;border-color:#819782!important}
+    .button-contact-outline:hover{background:#ffffff18!important}
+    .contact-orbit{border-color:#66856a!important;color:#ffffff12!important}
+    .site-footer{background:#071b15!important;border-color:#29483a!important}
+    .site-footer>p,.site-footer>small{color:#9cac9d!important}
+    .footer-links{color:#e0e9dd!important}.footer-links a:hover,.footer-credit{color:#c8e27a!important}
+    .menu-toggle span{background:#f4f1e7!important}
     @media(max-width:800px){
-      .site-header,.nav-links{background:#080b14!important}
-      .nav-links{border-color:#2b3b58!important}
-      .nav-cta{background:#f4f7ff!important;color:#080b14!important}
+      .site-header,.nav-links{background:#0a211a!important}
+      .nav-links{border-color:#29483a!important}
+      .nav-cta{background:#eeeadd!important;color:#102b20!important}
       .hero{display:flex!important;flex-direction:column-reverse!important;gap:8px!important}
       .hero h1{font-size:clamp(42px,10.5vw,64px)!important;line-height:.98!important}
       .portrait-stage{max-width:350px!important;max-height:350px!important;aspect-ratio:1!important}
